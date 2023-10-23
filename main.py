@@ -2,7 +2,7 @@ import socket
 from scapy.all import ARP, Ether, srp
 
 def scan_ip():
-    target_ip = "192.168.1.120/24"  # Replace with your network's subnet
+    target_ip = "---/24"  # Replace with your network's subnet
     arp = ARP(pdst=target_ip)
     ether = Ether(dst="ff:ff:ff:ff:ff:ff")
     packet = ether / arp
